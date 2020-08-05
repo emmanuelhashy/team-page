@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --dark-c: #000;
+  --lightgray-c: #a9a9a9;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    color: var(--dark-c);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+h2{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+text-transform: uppercase;
+margin-bottom: 1rem;
+
+color: #000000;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 95%;
+    align-items: center;
+}
+
+.header{
+    padding: 2rem 0;
+
+}
+
+.header__right{
+    flex-basis: 30%;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem 4rem;
+    margin-top: 2rem;
+    
+}
+
+.team__member{
+    margin: 1rem;
+}
+
+.photo__box{
+    position: relative;
+}
+
+.job__title {
+    position: absolute;
+  text-transform: uppercase;
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+  top: 3.2rem;
+  right: -5rem;
+  transform: rotate(90deg);
+}
+
+.job__title-2 {
+    top: 8.5rem;
+    right: -5.5rem;
+  }
+  
+  .job__title-3 {
+    top: 3.5rem;
+    right: -5.5rem;
+  }
+  
+  .job__title-4 {
+    top: 8.5rem;
+    right: -5.5rem;
+  }
+  .job__title-5 {
+    top: 3.5rem;
+    right: -5.5rem;
+  }
+  
+  .job__title-6 {
+    top: 8.4rem;
+    right: -5.5rem;
+  }
+  
+  .photo__down {
+    margin-top: 5rem;
+  }
+.photo {
+    width: 100%;
+    height: auto;
+}
+.footer{
+    align-self: center;
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  
+    /* Typography */
+  
+    h1 {
+      margin-bottom: 5rem;
+    }
+  
+    h3 {
+      font-size: 1.8rem;
+    }
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 5rem;
+      width: 100%;
+    }
+  
+    .header__content {
+      width: 400px;
+    }
+  
+    .article {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem 10rem;
+    }
+  
+    .job__title {
+      font-size: 1.2rem;
+      top: 3.8rem;
+      right: -6.5rem;
+    }
+  
+    .job__title-2 {
+      top: 24rem;
+      right: -6.5rem;
+    }
+  
+    .job__title-3 {
+      top: 3.7rem;
+      right: -6.5rem;
+    }
+  
+    .job__title-4 {
+      top: 4rem;
+      right: -6.3rem;
+    }
+    .job__title-5 {
+      top: 24rem;
+      right: -6rem;
+    }
+  
+    .job__title-6 {
+      top: 4rem;
+      right: -6rem;
+    }
+  
+    .photo__down {
+      margin-top: 0;
+    }
+  
+    .photo__down-2 {
+      margin-top: 20rem;
+    }
+  }
